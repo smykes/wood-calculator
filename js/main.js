@@ -45,11 +45,11 @@ function AppViewModel() {
             self.specificGravity($("#spec-gravity").val());
         },
         set: function() {
-                        self.specificGravity($("#spec-gravity").val());
+            self.specificGravity($("#spec-gravity").val());
 
         },
         change: function() {
-                        self.specificGravity($("#spec-gravity").val());
+            self.specificGravity($("#spec-gravity").val());
 
         }
     });
@@ -58,11 +58,11 @@ function AppViewModel() {
             self.moistureContent($("#moist-content").val());
         },
         set: function() {
-                        self.moistureContent($("#moist-content").val());
+            self.moistureContent($("#moist-content").val());
 
         },
         change: function() {
-                        self.moistureContent($("#moist-content").val());
+            self.moistureContent($("#moist-content").val());
 
         }
     });
@@ -132,7 +132,6 @@ function AppViewModel() {
             //self.setErrors();
             return 'ERR';
         }
-
     }, this);
 }
 
