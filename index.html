@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/skeleton-css/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/skeleton-css/css/skeleton.css">
+    <link rel="stylesheet" href="bower_components/nouislider/distribute/jquery.nouislider.min.css">
+    <link rel="stylesheet" href="bower_components/nouislider/distribute/jquery.nouislider.pips.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="solution">
+        <p data-bind="text: weight()"></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <label for="specific-gravity">Specific Gravity</label>
+                <div id="spec-gravity"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <input class="field u-full-width" name="specific-gravity" type="hidden" id="sg" data-bind="textInput: specificGravity" valueUpdate: 'afterkeydown'/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <label for="moisture-content">Moisture Content</label>
+                <div id="moist-content"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <input class="field u-full-width" name="moisture-content" id="mc" type="hidden" data-bind="textInput: moistureContent" valueUpdate: 'afterkeydown' />
+            </div>
+        </div>
+        <div class="row split">
+            <div class="four columns">
+                <label for="finished-width">Finished Width</label>
+                <input class="field u-full-width" name="finished-width" id="fw" type="number" data-bind="value: finishedWidth" valueUpdate: 'afterkeydown' />
+            </div>
+            <div class="four columns">
+                <label for="finished-thickness">Finished Thickness</label>
+                <input class="field u-full-width" name="finished-thickness" id="ft" type="number" data-bind="value: finishedThickness" valueUpdate: 'afterkeydown' />
+            </div>
+            <div class="four columns">
+                <label for="lineal-feet">Lineal Feet</label>
+                <input class="field u-full-width" name="lineal-feet" id="lf" type="number" data-bind="value: linealFeet" />
+            </div>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/nouislider/distribute/jquery.nouislider.all.min.js"></script>
+    <script src="bower_components/knockoutjs/dist/knockout.js"></script>
+    <script src="bower_components/knockout-validation/dist/knockout.validation.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

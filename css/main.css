@@ -1,0 +1,44 @@
+body {
+    background: #4C4C4C;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial;
+    margin: 0;
+}
+.solution {
+    background: #EEEEEE;
+    border-width: 4px 0 0px 0;
+    border-style: solid;
+    border-color: #487ABB;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.4);
+}
+.solution p {
+    color: #B3B3B3;
+    font-size: 2em;
+    text-align: right;
+    font-weight: 400;
+    padding: 10px 25px 10px 0;
+    margin: 0;
+}
+.row {
+    margin-bottom: 24px;
+}
+.row label {
+    font-weight: 400;
+    color: #fff;
+}
+.row input, .row textarea {
+    margin: 0;
+    background-color: white;
+}
+input.u-full-width{
+    background-color:white;
+    color: white;
+}
+.split label {
+    margin-top: 10px;
+}
+.error {
+    color: red;
+    font-size: .5em;
+    width: 100%;
+}
