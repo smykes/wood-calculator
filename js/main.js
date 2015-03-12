@@ -10,7 +10,15 @@ $(document).ready(function() {
     }).noUiSlider_pips({
         mode: 'range',
         density: 8
-    }).Link('lower').to($('#sg'));
+    }).Link('lower').to($('#sg')).Link('lower').to('-inline-<div class="tooltip"></div>', function(value) {
+
+        // The tooltip HTML is 'this', so additional
+        // markup can be inserted here.
+        $(this).html(
+            '<strong>Value: </strong>' +
+            '<span>' + value + '</span>'
+        );
+    });
 
     $('#moist-content').noUiSlider({
         start: 19,
@@ -24,7 +32,15 @@ $(document).ready(function() {
         mode: 'positions',
         values: [0, 25, 50, 75, 100],
         density: 5
-    }).Link('lower').to($('#mc'));
+    }).Link('lower').to($('#mc')).Link('lower').to('-inline-<div class="tooltip"></div>', function(value) {
+
+        // The tooltip HTML is 'this', so additional
+        // markup can be inserted here.
+        $(this).html(
+            '<strong>Value: </strong>' +
+            '<span>' + value + '</span>'
+        );
+    });;
 
 });
 
